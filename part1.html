@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dating Website - Part 1</title>
+  </head>
+  <body>
+    <h1>Please Enter Your Details For Our Dating Website!</h1>
+    <form action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="post" enctype="multipart/form-data">
+      <fieldset id="fs_face">
+        <legend>Your Face</legend>
+        <label for="avatar">Your image:</label>
+        <input id="avatar" type="file" name="avatar" required><br>
+        <label for="preview">Image preview:</label>
+        <img id="preview">
+      </fieldset>
+      <fieldset id="fs_general_details">
+        <legend>Your General Details</legend>
+        <label for="name">Name:</label>
+        <input id="name" type="text" name="name" placeholder="Your full name" required><br>
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" value="male" required>Male</input>
+        <input type="radio" name="gender" value="female">Female</input><br>
+        <label for="age">Age:</label>
+        <input id="age" type="number" value="18" required><br>
+        <label for="birth_date">Date of birth:</label>
+        <input id="birth_date" type="date" name="birth_date"><br>
+        <label for="fav_color">Favorite color:</label>
+        <input id="fav_color" type="color" name="color"><br>
+        <label for="country">Which country:</label>
+        <select id="country" name="country">
+          <option value="na">No selection</option>
+          <option value="ca">Canada</option>
+          <option value="ch">China</option>
+          <option value="de">Germany</option>
+          <option value="uk">United Kingdom</option>
+          <option value="us">USA</option>
+        </select>
+      </fieldset>
+      <fieldset id="fs_indicators">
+        <legend>Your Indicators</legend>
+        <label for="height">Height:</label>
+        Short <input id="height" type="range" name="height"> Tall<br>
+        <label for="salary">Salary:</label>
+        Poor <input id="height" type="range" name="salary"> Rich<br>
+      </fieldset>
+      <fieldset id="fs_contact_info">
+        <legend>Your contact Information</legend>
+        <label for="email">Email:</label>
+        <input id="email" type="email" name="email"><br>
+        <label for="mobile">Mobile:</label>
+        <input id="mobile" type="tel" name="mobile"><br>
+        <label for="address">Address:</label>
+        <input id="address" type="textarea" name="address"><br>
+        <label for="contact_methods">Method to contract you:</label>
+        <input id="contact_methods" type="checkbox" name="contact_methods" value="email">Email
+        <input id="contact_methods" type="checkbox" name="contact_methods" value="whatsapp">Whatsapp
+        <input id="contact_methods" type="checkbox" name="contact_methods" value="in_app_chat">In-app chat
+      </fieldset>
+      <input type="submit" value="send">
+    </form>
+  </body>
+</html>
