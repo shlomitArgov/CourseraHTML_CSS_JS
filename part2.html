@@ -14,16 +14,17 @@
     label {
       width: 180px;
       display: inline-block;
-      text-align: right vertical-align: top;
+      text-align: right;
+      vertical-align: top;
+    }
+    input[type=radio], input[type=checkbox]
+    {
+      width:auto;
     }
 
-    .large_text {
+    textarea {
       width: 360px;
       height: 50px
-    }
-
-    .auto_width {
-      width: auto;
     }
 
     .purple {
@@ -54,7 +55,7 @@
       <label for="name">Name:</label>
       <input id="name" type="text" name="name" placeholder="Your full name" required>
       <br>
-      <label for="gender" class="auto_width">Gender:</label>
+      <label for="gender">Gender:</label>
       <input type="radio" name="gender" value="male" required>Male</input>
       <input type="radio" name="gender" value="female">Female</input>
       <br>
@@ -81,26 +82,25 @@
       <legend>Your Indicators</legend>
       <label for="height">Height:</label>
       <span class="red">Short</span>
-      <input id="height" type="range" name="height">
+      <input id="height" type="range" name="height" min="0" max="100">
       <span class="purple">Tall</span>
       <br>
       <label for="salary">Salary:</label>
       <span class="red">Poor</span>
-      <input id="height" type="range" name="salary">
+      <input id="height" type="range" name="salary" min="0" max="100">
       <span class="purple">Rich</span>
       <br>
     </fieldset>
     <fieldset id="fs_contact_info">
       <legend>Your contact Information</legend>
       <label for="email">Email:</label>
-      <input id="email" type="email" name="email">
+      <input id="email" type="email" name="email" required>
       <br>
       <label for="mobile">Mobile:</label>
       <input id="mobile" type="tel" name="mobile">
       <br>
       <label for="address">Address:</label>
-      <input class="large_text" id="address" type="textarea" name="address">
-      <br>
+      <textarea id="address" type="textarea" name="address"></textarea><br>
       <label for="contact_methods" class="auto_width">Method to contract you:</label>
       <input id="contact_methods" type="checkbox" name="contact_methods" value="email">Email
       <input id="contact_methods" type="checkbox" name="contact_methods" value="whatsapp">Whatsapp
