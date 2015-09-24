@@ -39,18 +39,18 @@
       <fieldset id="fs_indicators">
         <legend>Your Indicators</legend>
         <label for="height">Height:</label>
-        Short <input id="height" type="range" name="height"> Tall<br>
+        Short <input id="height" type="range" name="height" min="0" max="100"> Tall<br>
         <label for="salary">Salary:</label>
-        Poor <input id="height" type="range" name="salary"> Rich<br>
+        Poor <input id="height" type="range" name="salary" min="0" max="100"> Rich<br>
       </fieldset>
       <fieldset id="fs_contact_info">
         <legend>Your contact Information</legend>
         <label for="email">Email:</label>
-        <input id="email" type="email" name="email"><br>
+        <input id="email" type="email" name="email" required><br>
         <label for="mobile">Mobile:</label>
         <input id="mobile" type="tel" name="mobile"><br>
         <label for="address">Address:</label>
-        <input id="address" type="textarea" name="address"><br>
+        <textarea id="address" name="address"></textarea><br>
         <label for="contact_methods">Method to contract you:</label>
         <input id="contact_methods" type="checkbox" name="contact_methods" value="email">Email
         <input id="contact_methods" type="checkbox" name="contact_methods" value="whatsapp">Whatsapp
